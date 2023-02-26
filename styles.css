@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  display: grid;
+  background-color: hsl(213deg 25% 12%);
+  color: hsl(217, 12%, 63%);
+  width: 302px;
+  padding: 24px 35px 24px 35px;
+  border-radius: 20px;
+}
+
+.app.hidden {
+  display: none;
+}
+
+.app > .app__image {
+  display: grid;
+  place-items: center;
+  background: hsl(213, 19%, 18%);
+  padding: 13px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.app > .image {
+  width: 15px;
+  margin-left: 1px;
+}
+
+.app > .app__title,
+.active > .active__title {
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+  margin-top: 32px;
+  font-weight: 500;
+}
+
+.app > .app__content,
+.active__content {
+  color: hsl(217, 12%, 63%);
+  line-height: 22px;
+}
+
+.app > .container__btn > .btn {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  padding: 12px 0px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.app > .app__numbers {
+  display: flex;
+  gap: 19px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
+
+.app > .app__numbers > .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsl(217deg 3% 40% / 17%);
+  width: 45px;
+  height: 45px;
+  color: rgb(151 151 151);
+}
+
+.app > .app__numbers > .number.active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.app.active.hidden {
+  display: none;
+}
+
+.active {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.active__selection {
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(217deg 3% 40% / 17%);
+  margin-top: 25px;
+}
+
+.active__selection > p {
+  margin: 0;
+  padding: 7px 16px;
+}
+
+.active__content {
+  font-size: 13.5px;
+}
+
+.active__image > .image {
+  width: 142px;
+}
