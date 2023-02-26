@@ -127,3 +127,13 @@ body {
 .active__image > .image {
   width: 142px;
 }
+
+@media screen and (max-width: 425px) {
+  body {
+    height: 80vh;
+  }
+
+  .app > .app__numbers {
+    gap: 15px;
+  }
+}
