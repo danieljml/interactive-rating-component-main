@@ -2,7 +2,9 @@ const btn_container = document.querySelector('.app__numbers'),
   btn = document.querySelector('.btn'),
   activeSelection = document.querySelector('.active__selection');
 
-let numberSelected = '';
+let numberSelected = '',
+  active = '';
+
 const numbers = Array(5)
   .fill(0)
   .map((_, i) => i + 1)
@@ -12,8 +14,18 @@ btn_container.innerHTML = numbers;
 
 btn_container.addEventListener('click', ({ target }) => {
   if (target.classList[0] === 'number') {
-    const active = target.classList.toggle('active');
-    numberSelected = target.textContent;
+    let numberList = [...document.querySelectorAll('.number')];
+
+    if (target.classList.contains('active')) {
+      numberList[target.textContent - 1].classList.remove('active');
+      active = false;
+      numberSelected = '';
+    } else {
+      numberList.forEach(item => item.classList.remove('active'));
+      active = numberList[target.textContent - 1].classList.toggle('active');
+      numberSelected = target.textContent;
+    }
+
     if (active) {
       btn.disabled = false;
       return;

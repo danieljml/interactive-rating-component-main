@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 20px;
   height: 100vh;
 }
 
@@ -71,6 +72,7 @@ body {
   gap: 19px;
   flex-wrap: wrap;
   margin: 14px 0;
+  cursor: pointer;
 }
 
 .app > .app__numbers > .number {
@@ -97,6 +99,7 @@ body {
   display: grid;
   justify-items: center;
   text-align: center;
+  height: 334.4px;
 }
 
 .active__selection {
