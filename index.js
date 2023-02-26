@@ -36,7 +36,7 @@ btn_container.addEventListener('click', ({ target }) => {
 
 if (btn.disabled) {
   btn.addEventListener('click', ({ target }) => {
-    activeSelection.innerHTML = `<p>You selected ${numberSelected} out if 5</p>`;
+    activeSelection.innerHTML = `<p>You selected ${numberSelected} out of 5</p>`;
     target.parentNode.parentNode.classList.add('hidden');
     target.parentNode.parentNode.nextElementSibling.classList.remove('hidden');
   });

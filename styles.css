@@ -103,19 +103,25 @@ body {
 }
 
 .active__selection {
+  display: grid;
+  place-items: center;
   border-radius: 20px;
   color: hsl(25, 97%, 53%);
   background-color: hsl(217deg 3% 40% / 17%);
-  margin-top: 25px;
 }
 
 .active__selection > p {
   margin: 0;
-  padding: 7px 16px;
+  padding: 6px 14px;
 }
 
 .active__content {
-  font-size: 13.5px;
+  font-size: 15px;
+  margin: 7px 0;
+}
+
+.active__image {
+  margin-bottom: 25px;
 }
 
 .active__image > .image {
