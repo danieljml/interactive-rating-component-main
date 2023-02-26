@@ -135,5 +135,6 @@ body {
 
   .app > .app__numbers {
     gap: 17px;
+    justify-content: center;
   }
 }
